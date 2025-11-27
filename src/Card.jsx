@@ -1,15 +1,31 @@
 import React from "react";
+
 // import { useNavigate } from "react-router-dom";
-const Card = ({png , title}) => {
-    // const navigate = useNavigate();
-    // const handleClick = () => {
-        // navigate('/details', { state: { title: title } });
-    // }   
-    return (
-        <div className="card" onClick={handleClick} style={{ cursor: 'pointer' }}>
-            <img src={png}  alt=""/>    
-            <h3 className="card-title">{title}</h3>
+
+const Card = ({ pimg, mithai, price, des, Add, but }) => {
+//   const navigate = useNavigate();
+
+//   const NextPage = () => {
+    // navigate("/Bookdetails");
+//   };
+
+  return (
+    <>
+      <div className="card-box">
+        <img src={pimg} alt="car" className="car-img" />
+
+        <h2>{mithai}</h2>
+        <h3>{price}</h3>
+
+        <p>{des}</p>
+
+        <div className="btn-area">
+          <button className="btn1">{Add}</button>
+          <button className="btn2" >{but}</button>
         </div>
-    )
+      </div>
+    </>
+  );
 };
+
 export default Card;

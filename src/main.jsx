@@ -1,14 +1,17 @@
 import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 
-// import App from './App'
-import Prop from './Prop.jsx'
+
+import App from './Navbar.jsx'
+// import Prop from './Prop.jsx'
+
+// import App from './Tailwind'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Prop/>
+    <App/>
      
   </StrictMode>
 )

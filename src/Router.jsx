@@ -4,7 +4,7 @@ import Layout from './Layout.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
 import Service from './Service.jsx'
-import Home from './Count.jsx'
+// import Home from './Count.jsx'
 
 const Router = () => {
   return (
